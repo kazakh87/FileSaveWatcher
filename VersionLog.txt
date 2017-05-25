@@ -1,0 +1,8 @@
+[1.12]
+~Websites working with config files
+~Creates config files only in projects created in \wwwroot
+
+[1.0]
+*FileSaveWatcher implemented
+*Creates and reads config files from projectdir
+*Executing CMD commands on saving of files 

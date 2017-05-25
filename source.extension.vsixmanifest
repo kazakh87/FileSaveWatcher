@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="FileSaveWatcher.3315908a-551f-4741-9bee-af02b6b7ffd1" Version="1.12" Language="de-DE" Publisher="Konstantin Dombrowski" />
+    <DisplayName>FileSaveWatcher</DisplayName>
+    <Description xml:space="preserve">Diese Erweiterung führt gewünschten Code beim Speichern von Dateien aus.
+Events werden aus der SaveFileWatcherConfig Datei der Projectordner gelesen.</Description>
+    <MoreInfo>http://vip.ag.vu/</MoreInfo>
+    <License>LICENSE.txt</License>
+    <GettingStartedGuide>ReadMe.txt</GettingStartedGuide>
+    <ReleaseNotes>VersionLog.txt</ReleaseNotes>
+    <Icon>Resources\401.ico</Icon>
+    <PreviewImage>Resources\401.ico</PreviewImage>
+    <Tags>save file watcher onsave document </Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[10.0,)" />
+    <InstallationTarget Version="[10.0)" Id="Microsoft.VisualStudio.Pro" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5.1,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>

@@ -1,0 +1,22 @@
+#######################################################################
+# This is a config file for SaveFilWatcher extension of Visual Studio #
+#######################################################################
+# the '#' on start is a comment line
+
+# uncomment the following line to change the workingdirectory for the script
+#workingdir C:\temp_dir
+
+# description of entrys
+# first event   = [event option of changing the file] !must be the first param!
+#                 keys => onOpening|onOpened|onSaved|onClosing
+# second filter = [filtering the files, to trigger the command(cmd)] (can be a part, default is '*')
+#                 filter is using only the files in the project directory, (for regex use '/' > '/[.]cs/')
+#                 params: {file_name}/{file_path}/{file_dir}/{file_ext}/{file_name_without_ext}
+#                         {settings_path}/{settings_name}/{settings_dir}
+# third sync    = [run cmd in shell synchron] (optional, default '0')
+#                 1 => true or 0 => false 
+# last cmd      = [cmd is the last param and reads to end of line] !must be the last param!
+#                 the content after 'cmd=' (ends with \r\n) is piped direct shell
+
+# uncomment the following line to activete there, or make a new one
+#event=onSaved;filter=*.cs;sync=1;cmd=copy "{file_path}" "c:\temp"
